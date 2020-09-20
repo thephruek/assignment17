@@ -1,19 +1,27 @@
 #include<stdio.h>
 int main() {
-	printf("Credit of the 1st subject = 3 \n");
-	printf("Credit of the 2nd subject = 2 \n");
-	printf("Credit of the 2nd subject = 1 \n");
-	float score1, score2, score3, total;
-	printf("Enter score 1 [Max 100] : ");
-	scanf_s("%f", &score1);
-	printf("Enter score 2 [Max 100] : ");
-	scanf_s("%f", &score2);
-	printf("Enter score 3 [Max 100] : ");
-	scanf_s("%f", &score3);
-	int x[] = { score1,score2,score3 };
-	score1 = score1 * 3.0;
-	score2 = score2 * 2.0;
-	total = (score1 + score2 + score3) / 6.0;
+	printf("Credit of Computer subject = 3 \n");
+	printf("Credit of Mathematics subject = 2 \n");
+	printf("Credit of Physics subject = 2 \n");
+	printf("Credit of Chemistry subject = 2 \n");
+	printf("Credit of Business subject = 1 \n");
+	float com, math, phi, chem, bus, total;
+	printf("Enter your Computer subject score [Max 100] : ");
+	scanf_s("%f", &com);
+	printf("Enter your Mathematics subject score [Max 100] : ");
+	scanf_s("%f", &math);
+	printf("Enter your Physics subject score [Max 100] : ");
+	scanf_s("%f", &phi);
+	printf("Enter your Chemistry subject score [Max 100] : ");
+	scanf_s("%f", &chem);
+	printf("Enter your Business subject score [Max 100] : ");
+	scanf_s("%f", &bus);
+	int x[] = { com,math,phi,chem,bus };
+	com = com * 3.0;
+	math = math * 2.0;
+	phi = phi * 2.0;
+	chem = chem * 2.0;
+	total = (com + math + phi + chem + bus) / 10.0;
 	if (total >= 50 && total <= 100)
 	{
 		printf("You passed\n");
